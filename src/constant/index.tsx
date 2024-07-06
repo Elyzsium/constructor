@@ -1,4 +1,4 @@
-import { FiCoffee } from "react-icons/fi";
+import { FiCoffee, FiPlus } from "react-icons/fi";
 import {
   FaUser,
   FaFileAlt,
@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 import { SiMcdonalds, SiNike, SiReebok } from "react-icons/si";
 import { FaCompass, FaFacebookMessenger, FaStar } from "react-icons/fa";
-import { FaArrowTrendUp } from "react-icons/fa6";
+import { FaArrowTrendUp, FaCirclePlus } from "react-icons/fa6";
 import { IoMdGlobe } from "react-icons/io";
 import { BsBuildings } from "react-icons/bs";
 import {
@@ -21,10 +21,6 @@ import { PiCoffeeLight, PiMonitorPlay } from "react-icons/pi";
 import { TbHanger } from "react-icons/tb";
 import { CiGift, CiPercent } from "react-icons/ci";
 import { FaCcMastercard, FaCcVisa } from 'react-icons/fa'; // Import icons
-
-
-
-
 
 export const BrandData = [
   { name: "Reebok", logo: SiReebok, type: "icon" },
@@ -86,7 +82,7 @@ export const MenuIcons = [
   { Icon: BsBuildings, label: "Office" },
 ];
 
-export const UserIcons = [{ Icon: FiCoffee, label: "Cafe & Restaurant" }];
+export const UserIcons = [{ Icon: FaCirclePlus, label: "Cafe & Restaurant" }];
 export const UserImages = [
   { Src: "/image4.jpg", label: "Home" },
   { Src: "/image4.jpg", label: "Home" },
@@ -109,6 +105,6 @@ export const menuItems = [
 
 export const cardData = [
   { id: 4456, type: 'Master Card', balance: 4560, color: 'bg-purple-400', icon: FaCcMastercard },
-  { id: 6753, type: 'Master Card', balance: 1120, color: 'bg-yellow-400', icon: FaCcMastercard },
+  { id: 6753, type: 'Master Card', balance: 1120, color: 'bg-yellow-500', icon: FaCcMastercard },
   { id: 9875, type: 'Visa Black Card', balance: 345, color: 'bg-gray-700', icon: FaCcVisa },
 ];

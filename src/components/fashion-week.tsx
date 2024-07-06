@@ -14,12 +14,12 @@ const FashionWeek = ({ brandDatas }: FashionWeekProps) => {
         <input
           type="text"
           placeholder="Search Company and Stock"
-          className="w-full py-3 px-4 pr-10 rounded-md border border-gray-300 focus:outline-none focus:shadow focus:shadow-slate-500"
+          className="w-full py-3 px-4 pr-10 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         <FiSearch className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
       </div>
 
-      <div className="rounded-xl overflow-hidden relative h-[280px] sm:h-[300px] md:h-[470px]">
+      <div className="rounded-xl overflow-hidden relative h-[470px]">
         <Image
           src="/fashion.jpg"
           alt="Fashion Week"
@@ -28,17 +28,19 @@ const FashionWeek = ({ brandDatas }: FashionWeekProps) => {
           className="rounded-xl"
         />
 
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50" />
+
         <div className="absolute top-4 left-4 right-4 flex justify-between items-center">
           <h2 className="text-white text-2xl font-bold">Fashion Week</h2>
           <FiMoreHorizontal className="text-white text-2xl" />
         </div>
 
-        <div className="absolute inset-0 z-10 flex flex-col justify-center items-center gap-20 p-4 sm:p-6">
-          <div className="grid grid-cols-3 gap-8 mt-10">
-            {BrandData.map((brand, index) => (
+        <div className="absolute bottom-6 left-6 right-6">
+          <div className="flex justify-between items-center">
+            {BrandData.slice(0, 5).map((brand, index) => (
               <div
                 key={index}
-                className="bg-black w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center"
+                className="bg-black/70 w-16 h-16 rounded-full flex items-center justify-center"
               >
                 {brand.type === "image" ? (
                   <Image
@@ -49,7 +51,7 @@ const FashionWeek = ({ brandDatas }: FashionWeekProps) => {
                     className="object-contain"
                   />
                 ) : (
-                  <brand.logo className="w-8 h-8 text-white text-sm" />
+                  <brand.logo className="w-8 h-8 text-white" />
                 )}
               </div>
             ))}
