@@ -9,7 +9,7 @@ import SideBar from "@/components/nav/sidebar";
 
 const Dashboard = () => {
   return (
-    <div className="max-w-[1600px] mx-auto p-4">
+    <div className="max-w-[1600px] mx-auto w-full p-4">
         <div className="flex gap-4">
           {/* Left sidebar */}
           <div className="hidden xl:block w-16">
