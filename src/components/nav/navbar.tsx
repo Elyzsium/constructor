@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="flex flex-col text-gray-700 md:flex-row justify-between shadow-md border border-b-gray-300 items-center p-4">
       <div className="flex items-center justify-between w-full md:w-auto">
-          <div className="flex justify-center items-center gap-10">
+          <div className="flex justify-center items-center gap-4">
           <span 
            className="w-6 h-6 text-5xl text-gray-600 sm:w-16 sm:h-16 bg-white rounded-full flex items-center justify-center"
            onClick={() => setIsMenuOpen(!isMenuOpen)}
