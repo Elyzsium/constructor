@@ -16,6 +16,12 @@ const config: Config = {
       colors: {
         'green-500': '#10B981', 
       },
+      screens: {
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1200px',
+        'xl': '1536px',
+      }
     },
   },
   plugins: [],

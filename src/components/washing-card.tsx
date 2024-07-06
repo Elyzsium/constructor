@@ -29,7 +29,7 @@ const WashingCard = () => {
             <p className="text-3xl sm:text-4xl md:text-5xl font-bold mt-2">
               35%
             </p>
-            <Button className="py-2 mt-6 sm:mt-8 bg-orange-500 text-white rounded-full text-sm sm:text-base hover:bg-orange-600 transition-colors duration-300">
+            <Button className="py-2 mt-6 ml-16 sm:mt-8 bg-orange-500 text-white rounded-full text-sm sm:text-base hover:bg-orange-600 transition-colors duration-300">
               Activate Now
             </Button>
           </div>

@@ -1,4 +1,4 @@
-import { FiCoffee, FiPlus } from "react-icons/fi";
+
 import {
   FaUser,
   FaFileAlt,
@@ -20,7 +20,9 @@ import {
 import { PiCoffeeLight, PiMonitorPlay } from "react-icons/pi";
 import { TbHanger } from "react-icons/tb";
 import { CiGift, CiPercent } from "react-icons/ci";
-import { FaCcMastercard, FaCcVisa } from 'react-icons/fa'; // Import icons
+import { FaCcMastercard, FaCcVisa } from 'react-icons/fa'; 
+import { CardData, OfferCardProps } from '@/types';
+
 
 export const BrandData = [
   { name: "Reebok", logo: SiReebok, type: "icon" },
@@ -42,7 +44,9 @@ export const categoryItems = [
   { icon: GiLipstick, label: "Beauty" },
 ];
 
-export const offerItems = [
+
+
+export const offerItems: OfferCardProps[] = [
   {
     title: "Food Delivery",
     discount: "35%",
@@ -67,11 +71,26 @@ export const offerItems = [
   {
     title: "Accessories Discounts",
     discount: "10%",
-    icon: null,
+    icon: "harley",
     iconBg: "bg-black",
     image: "/biker.jpeg",
   },
+  {
+    title: "Jacket",
+    discount: "15%",
+    icon: "burlington",
+    iconBg: "bg-black",
+    image: "/suit.jpeg",
+  },
+  {
+    title: "Sky Travel",
+    discount: "10%",
+    icon: "sky",
+    iconBg: "bg-slate",
+    image: "/travel.jpg",
+  },
 ];
+
 
 export const MenuIcons = [
   { Icon: FaCompass, label: "Home" },
@@ -104,7 +123,7 @@ export const menuItems = [
 ];
 
 export const cardData = [
-  { id: 4456, type: 'Master Card', balance: 4560, color: 'bg-purple-400', icon: FaCcMastercard },
-  { id: 6753, type: 'Master Card', balance: 1120, color: 'bg-yellow-500', icon: FaCcMastercard },
-  { id: 9875, type: 'Visa Black Card', balance: 345, color: 'bg-gray-700', icon: FaCcVisa },
+  { id: 4456, type: 'Master Card', balance: 4560, color: '#a855f7', icon: FaCcMastercard },
+  { id: 6753, type: 'Master Card', balance: 1120, color: '#eab308', icon: FaCcMastercard },
+  { id: 9875, type: 'Visa Black Card', balance: 345, color: '#374151', icon: FaCcVisa },
 ];

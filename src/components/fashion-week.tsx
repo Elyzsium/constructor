@@ -37,7 +37,7 @@ const FashionWeek = ({ brandDatas }: FashionWeekProps) => {
 
         <div className="absolute bottom-6 left-6 right-6">
           <div className="flex justify-between items-center">
-            {BrandData.slice(0, 5).map((brand, index) => (
+            {BrandData.slice(0, 6).map((brand, index) => (
               <div
                 key={index}
                 className="bg-black/70 w-16 h-16 rounded-full flex items-center justify-center"

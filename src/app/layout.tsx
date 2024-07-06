@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`min-h-screen bg-slate-200 grid ${inter.className}`}>
+      <body className={`bg-slate-200 grid ${inter.className}`}>
         <Navbar />
         <main className="flex-grow">{children}</main>
       </body>
